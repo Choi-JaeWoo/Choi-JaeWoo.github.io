@@ -1,0 +1,55 @@
+papers:
+  
+  - title: "[C] LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents"
+    image: "/assets/publications/ICLR/2024.png"
+    authors: "<b>Jae-Woo Choi*</b>, Youngwoo Yoon*, Hyobin Ong, Jaehong Kim, Minsu Jang"
+    venue: "International Conference on Learning Representations (ICLR) 2024"
+    selected: y
+
+  - title: "[C] FastSwap: A Lightweight One-Stage Framework for Real-Time Face Swapping"
+    image: "/assets/publications/WACV/2023.png"
+    authors: "Sahng-Min Yoo, Tae-Min Choi, <b>Jae-Woo Choi</b>, Jong-Hwan Kim"
+    venue: "Winter Conference on Applications of Computer Vision (WACV) 2023"
+    selected: y
+
+  - title: "[J] FMCW Radar-Based Real-Time Hand Gesture Recognition System Capable of Out-of-Distribution Detection"
+    image: "/assets/publications/Access/2022.png"
+    authors: "<b>Jae-Woo Choi*</b>, Chan-Woo Park*, Jong-Hwan Kim"
+    venue: "IEEE Access 2022"
+    selected: y
+
+  - title: "[J] SR-EM: Episodic Memory Aware of Semantic Relations Based on Hierarchical Clustering Resonance Network"
+    image: "/assets/publications/TCYB/2022.png"
+    authors: "<b>Jae-Woo Choi</b>, Gyeong-Moon Park, Jong-Hwan Kim"
+    venue: "IEEE Transactions on Cybernetics 2022"
+    selected: y
+
+  - title: "[C] Field Friction Recognition and State Inference in AI Soccer"
+    image: 
+    authors: "Chansol Hong, Gyeong-Min Lee, <b>Jae-Woo Choi</b>, Jong-Hwan Kim"
+    venue: "International Conference on Robot Intelligence Technology and Applications (RiTA) 2021"
+    selected: n
+
+  - title: "[J] Developmental Resonance Network"
+    image: "/assets/publications/TNNLS/2019.png"
+    authors: "Gyeong-Moon Park, <b>Jae-Woo Choi</b>, Jong-Hwan Kim"
+    venue: "IEEE Transactions on Neural Networks and Learning Systems 2019"
+    selected: y
+
+  - title: "[J] Short-Range Radar Based Real-Time Hand Gesture Recognition Using LSTM Encoder"
+    image: "/assets/publications/Access/2019.png"
+    authors: "<b>Jae-Woo Choi*</b>, Si-Jung Ryu*, Jong-Hwan Kim"
+    venue: "IEEE Access 2019"
+    selected: y
+  
+  - title: "[C] Human Robot Social Interaction Framework Based on Emotional Episodic Memory"
+    image: 
+    authors: "Won-Hyong Lee, Sahng-Min Yoo, <b>Jae-Woo Choi</b>, Ue-Hwan Kim, Jong-Hwan Kim"
+    venue: "International Conference on Robot Intelligence Technology and Applications (RiTA) 2018"
+    selected: n
+
+  - title: "[C] 24 GHz FMCW Radar System for Real-Time Hand Gesture Recognition Using LSTM"
+    image: 
+    authors: "Jun Seuk Suh, Siiung Ryu, Bvunghun Han, <b>Jae-Woo Choi</b>, Jong-Hwan Kim, Songcheol Hong"
+    venue: "Asia-Pacific Microwave Conference (APMC) 2018"
+    selected: n
