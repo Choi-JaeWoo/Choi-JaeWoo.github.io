@@ -143,30 +143,26 @@ layout: default
 <!-- ========== Employment ========== -->
 <div class="docs-section" id="employment">
   <h4>Employment</h4>
+      {% for employment in site.data.employment.employments %}
         <div class="paper">
-          <p class="title"><b>Electronics and Telecommunications Research Institute  (ETRI)<b style="float:right;">Sep. 2022 - Present</b></b></p>
-          <p> Senior Researcher</p>
+          <p class="title"><b>{{employment.place}}<b style="float:right;">{{employment.time}}</b></b></p>
+          <p>{{employment.title}}</p>
         </div>
+      {% endfor %}
 </div>
 
 
 <!-- ========== Education ========== -->
 <div class="docs-section" id="education">
   <h4>Education</h4>
+      {% for education in site.data.education.educations %}
         <div class="paper">
-          <p class="title"><b>Korea Advanced Institute of Science and Technology (KAIST)<b style="float:right;">Mar. 2018 - Aug. 2022</b></b></p>
-          <p>Ph.D. in Electrical Engineering </p>
+            <p class="title"><b>{{education.place}}<b style="float:right;">{{education.time}}</b></b></p>
+            <p>{{education.title}}</p>
         </div>
-        <div class="paper">
-          <p class="title"><b>Korea Advanced Institute of Science and Technology (KAIST)<b style="float:right;">Mar. 2016 - Feb. 2018</b></b></p>
-          <p>M.S. in Electrical Engineering </p>
-        </div>
-        <div class="paper">
-          <p class="title"><b>Korea Advanced Institute of Science and Technology (KAIST)<b style="float:right;">Feb. 2011 - Feb. 2016</b></b></p>
-          <p>B.S. in Mathematical Sciences (major) and Electrical Engineering (minor) </p>
-        </div>
-</div>
+      {% endfor %}
 
+</div>
 
 
 
