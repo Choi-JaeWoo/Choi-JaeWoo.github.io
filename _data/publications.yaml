@@ -6,11 +6,23 @@ papers:
     venue: "International Conference on Learning Representations (ICLR) 2024"
     selected: y
 
+  - title: "[C] A Structured Prompting based on Belief-Desire-Intention Model for Proactive and Explainable Task Planning"
+    image: 
+    authors: "Minsu Jang, Youngwoo Yoon, <b>Jae-Woo Choi</b>, Hyobin Ong, Jaehong Kim"
+    venue: "International Conference on Human-Agent Interaction (HAI) 2023"
+    selected: n
+
   - title: "[C] FastSwap: A Lightweight One-Stage Framework for Real-Time Face Swapping"
     image: "/assets/publications/WACV/2023.png"
     authors: "Sahng-Min Yoo, Tae-Min Choi, <b>Jae-Woo Choi</b>, Jong-Hwan Kim"
     venue: "Winter Conference on Applications of Computer Vision (WACV) 2023"
     selected: y
+
+  - title: "[C] Field Friction Recognition and State Inference in AI Soccer"
+    image: 
+    authors: "Chansol Hong, Gyeong-Min Lee, <b>Jae-Woo Choi</b>, Jong-Hwan Kim"
+    venue: "International Conference on Robot Intelligence Technology and Applications (RiTA) 2021"
+    selected: n
 
   - title: "[J] FMCW Radar-Based Real-Time Hand Gesture Recognition System Capable of Out-of-Distribution Detection"
     image: "/assets/publications/Access/2022.png"
@@ -24,22 +36,16 @@ papers:
     venue: "IEEE Transactions on Cybernetics 2022"
     selected: y
 
-  - title: "[C] Field Friction Recognition and State Inference in AI Soccer"
-    image: 
-    authors: "Chansol Hong, Gyeong-Min Lee, <b>Jae-Woo Choi</b>, Jong-Hwan Kim"
-    venue: "International Conference on Robot Intelligence Technology and Applications (RiTA) 2021"
-    selected: n
+  - title: "[J] Short-Range Radar Based Real-Time Hand Gesture Recognition Using LSTM Encoder"
+    image: "/assets/publications/Access/2019.png"
+    authors: "<b>Jae-Woo Choi*</b>, Si-Jung Ryu*, Jong-Hwan Kim"
+    venue: "IEEE Access 2019"
+    selected: y
 
   - title: "[J] Developmental Resonance Network"
     image: "/assets/publications/TNNLS/2019.png"
     authors: "Gyeong-Moon Park, <b>Jae-Woo Choi</b>, Jong-Hwan Kim"
     venue: "IEEE Transactions on Neural Networks and Learning Systems 2019"
-    selected: y
-
-  - title: "[J] Short-Range Radar Based Real-Time Hand Gesture Recognition Using LSTM Encoder"
-    image: "/assets/publications/Access/2019.png"
-    authors: "<b>Jae-Woo Choi*</b>, Si-Jung Ryu*, Jong-Hwan Kim"
-    venue: "IEEE Access 2019"
     selected: y
   
   - title: "[C] Human Robot Social Interaction Framework Based on Emotional Episodic Memory"
