@@ -7,7 +7,7 @@ papers:
     selected: y
     code: "https://github.com/lbaa2022/LLMTaskPlanning"
     project_page: "https://choi-jaewoo.github.io/LoTa-Bench/"
-    paper_pdf: "https://openreview.net/forum?id=ADSxCpCu9s"
+    paper_pdf: "https://arxiv.org/abs/2402.08178"
 
   - title: "[C] A Structured Prompting based on Belief-Desire-Intention Model for Proactive and Explainable Task Planning"
     image: "/assets/publications/HAI/2023.png"
