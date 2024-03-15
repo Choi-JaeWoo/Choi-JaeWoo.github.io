@@ -45,15 +45,7 @@ layout: default
           <div class="row">
             <div class="four columns">
               <div class="figure">
-                {% if paper.image %}
-                  <img src="{{ paper.image }}" width="100%">
-                {% elsif paper.video %}
-                  <video width="100%" controls>
-                    <source src="{{ paper.video }}" type="video/avi">
-                  </video>
-                {% else %}
-                  <p>No image or video available.</p>
-                  {% endif %}
+                <img src="{{ paper.image }}" width="100%">
               </div>
             </div>
             <div class="eight columns">
