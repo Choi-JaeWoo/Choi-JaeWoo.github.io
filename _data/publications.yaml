@@ -1,7 +1,7 @@
 papers:
   
   - title: "[C] LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents"
-    image: "/assets/publications/ICLR/2024.png"
+    # image: "/assets/publications/ICLR/2024.png"
     authors: "<b>Jae-Woo Choi*</b>, Youngwoo Yoon*, Hyobin Ong, Jaehong Kim, Minsu Jang"
     venue: "International Conference on Learning Representations (ICLR) 2024"
     selected: y
