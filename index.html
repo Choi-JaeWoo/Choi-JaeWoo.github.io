@@ -5,11 +5,12 @@ layout: default
 <div class="docs-section" id="about">
   <h4>About</h4>
     <p>
-      I am a Senior Researcher in the Social Robotics Research Lab at ETRI (Electronics and Telecommunications Research Institute), South Korea. I received my PhD at KAIST (Korea Advanced Institute of Science and Technology), advised by Prof. Jong-Hwan Kim.  
+      I am a Senior Researcher at <span style="color:#f09228; font-weight:600;">ETRI</span> (Electronics and Telecommunications Research Institute) and a concurrent Assistant Professor at <span style="color:#f09228; font-weight:600;">UST</span> (University of Science and Technology), South Korea.
+      My research interests include LLM/VLM-based task planning, embodied AI, and human-robot interaction.
     </p>
-    <!-- <p>
-      My current research interest is ... 
-    </p> -->
+    <p>
+      I received my Ph.D. in Electrical Engineering from <span style="color:#f09228; font-weight:600;">KAIST</span> (Korea Advanced Institute of Science and Technology), advised by Prof. Jong-Hwan Kim.
+    </p>
 </div>
 
 <!-- ========== News ========== -->
@@ -28,19 +29,114 @@ layout: default
 </div> -->
 
 <style>
-  .paper {
-    border: 1px solid #ddd; /* 경계선 추가 */
-    margin-bottom: 20px; /* 여백 추가 */
-    padding: 15px; /* 내부 여백 추가 */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* 그림자 효과 추가 */
-    background-color: #fafafa; /* 배경 색상 변경 */
+  papertitle {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #222;
+  }
+  .pub-entry {
+    padding: 18px 0;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+  }
+  .pub-entry:last-child {
+    border-bottom: none;
+  }
+  .pub-entry a {
+    color: #1772d0;
+    text-decoration: none;
+  }
+  .pub-entry a:hover {
+    color: #f09228;
+  }
+  .pub-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .pub-img-wrap {
+    flex-shrink: 0;
+    width: 280px;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pub-img-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  .pub-img-wrap video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    background: #000;
+  }
+  .pub-img-wrap video::-webkit-media-controls {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .pub-img-wrap:hover video::-webkit-media-controls {
+    opacity: 1;
+  }
+  .pub-text {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+  }
+  .pub-entry em {
+    color: #555;
+  }
+  .badge-conf {
+    display: inline-block;
+    background: #1772d0;
+    color: #fff;
+    padding: 1px 7px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+  .badge-journal {
+    display: inline-block;
+    background: #28a745;
+    color: #fff;
+    padding: 1px 7px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+  .style_2 {
+    color: #999;
+  }
+  @media (max-width: 600px) {
+    .pub-row {
+      flex-direction: column;
+    }
+    .pub-img-wrap {
+      width: 100%;
+    }
   }
 </style>
 
 <!-- ========== Publications ========== -->
 <div class="docs-section" id="publications">
   <h4>Publications</h4>
-  <h6>(C: conference / J: journal / *: equal contribution)</h6>
+  <h6>( * : equal contribution )</h6>
 
   <ul class="tab-nav">
     <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
@@ -51,43 +147,45 @@ layout: default
     <div class="tab-pane active" id="papers-selected">
       {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
       {% for paper in selected_papers %}
-        <div class="paper">
-          <div class="row">
-            <div class="four columns">
-              <div class="figure">
-                <img src="{{ paper.image }}" width="100%">
-              </div>
+        <div class="pub-entry">
+          <div class="pub-row">
+            <div class="pub-img-wrap">
+              {% if paper.video %}
+                <video controls preload="metadata" muted>
+                  <source src="{{ paper.video }}" type="video/mp4">
+                </video>
+              {% elsif paper.image %}
+                <img src="{{ paper.image }}">
+              {% endif %}
             </div>
-            <div class="eight columns">
-              <p class="title"><b>{{ paper.title }}</b></p>
-              <p>{{ paper.authors }}</p>
-              <p><i>{{ paper.venue }}</i></p>
-              <div class="paper-buttons">
-                {% if paper.paper_pdf %}
-                  <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
-                {% endif %}
-                
-                {% if paper.code %}
-                  <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-                {% endif %}
-
-                {% if paper.video %}
-                  <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-                {% endif %}
-
-                {% if paper.project_page %}
-                  <a class="button" href="{{ paper.project_page }}" target="_blank">Project</a>
-                {% endif %}
-
-                {% if paper.slides %}
-                  <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-                {% endif %}
-
-                {% if paper.poster %}
-                  <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-                {% endif %}
-
-              </div>
+            <div class="pub-text">
+              {% if paper.type == "conference" %}
+                <span class="badge-conf">Conference</span>
+              {% elsif paper.type == "journal" %}
+                <span class="badge-journal">Journal</span>
+              {% endif %}
+              <papertitle>{{ paper.title }}</papertitle><br>
+              {{ paper.authors }}<br>
+              <em>{{ paper.venue }}</em><br>
+              {% if paper.paper_pdf %}
+                <a href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
+              {% endif %}
+              {% if paper.code %}
+                <span class="style_2"> | </span>
+                <a href="{{ paper.code }}" target="_blank">Code</a>
+              {% endif %}
+              {% if paper.project_page %}
+                <span class="style_2"> | </span>
+                <a href="{{ paper.project_page }}" target="_blank">Webpage</a>
+              {% endif %}
+              {% if paper.slides %}
+                <span class="style_2"> | </span>
+                <a href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+              {% endif %}
+              {% if paper.poster %}
+                <span class="style_2"> | </span>
+                <a href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+              {% endif %}
             </div>
           </div>
         </div>
@@ -96,42 +194,49 @@ layout: default
 
     <div class="tab-pane" id="papers-all">
       {% for paper in site.data.publications.papers %}
-        <div class="paper">
-          <div class="row">
-            <div class="four columns">
-              <div class="figure">
-                <img src="{{ paper.image }}" width="100%">
-              </div>
+        <div class="pub-entry">
+          <div class="pub-row">
+            <div class="pub-img-wrap">
+              {% if paper.video %}
+                <video controls preload="metadata" muted>
+                  <source src="{{ paper.video }}" type="video/mp4">
+                </video>
+              {% elsif paper.image %}
+                <img src="{{ paper.image }}">
+              {% endif %}
             </div>
-            <div class="eight columns">
-              <p class="title"><b>{{ paper.title }}</b></p>
-              <p>{{ paper.authors }}</p>
-              <p><i>{{ paper.venue }}</i></p>
-              <div class="paper-buttons">
-                {% if paper.paper_pdf %}
-                  <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
-                {% endif %}
-
-                {% if paper.slides %}
-                  <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-                {% endif %}
-
-                {% if paper.poster %}
-                  <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-                {% endif %}
-
-                {% if paper.video %}
-                  <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-                {% endif %}
-
-                {% if paper.code %}
-                  <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-                {% endif %}
-              </div>
+            <div class="pub-text">
+              {% if paper.type == "conference" %}
+                <span class="badge-conf">Conference</span>
+              {% elsif paper.type == "journal" %}
+                <span class="badge-journal">Journal</span>
+              {% endif %}
+              <papertitle>{{ paper.title }}</papertitle><br>
+              {{ paper.authors }}<br>
+              <em>{{ paper.venue }}</em><br>
+              {% if paper.paper_pdf %}
+                <a href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
+              {% endif %}
+              {% if paper.code %}
+                <span class="style_2"> | </span>
+                <a href="{{ paper.code }}" target="_blank">Code</a>
+              {% endif %}
+              {% if paper.project_page %}
+                <span class="style_2"> | </span>
+                <a href="{{ paper.project_page }}" target="_blank">Webpage</a>
+              {% endif %}
+              {% if paper.slides %}
+                <span class="style_2"> | </span>
+                <a href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+              {% endif %}
+              {% if paper.poster %}
+                <span class="style_2"> | </span>
+                <a href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+              {% endif %}
             </div>
           </div>
         </div>
-    {% endfor %}
+      {% endfor %}
     </div>
 
 </div>
@@ -162,6 +267,19 @@ layout: default
 
 
 
+<!-- ========== Academic Service ========== -->
+<div class="docs-section" id="service">
+  <h4>Academic Service</h4>
+        <div class="paper">
+          <p class="title"><b>Reviewer, Neural Information Processing Systems (NeurIPS)<b style="float:right;">2025</b></b></p>
+          <p>Selected as a <b>Top Reviewer</b> among all reviewers for outstanding review quality and contribution.</p>
+        </div>
+        <div class="paper">
+          <p class="title"><b>Reviewer</b></p>
+          <p>ICLR, ICML, NeurIPS, AAAI</p>
+        </div>
+</div>
+
 <!-- ========== Honors & Awards ========== -->
 <!-- <div class="docs-section" id="honors">
   <h4>Honors & Awards</h4>
@@ -184,7 +302,7 @@ layout: default
 <!-- <div class="docs-section" id="resume">
   <h4>Vitæ</h4> -->
 
-  <!-- <p>Full CV in <a href={{ "/assets/cv/CV.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.</p> -->
+  <!-- <p>Full CV in <a href={{ "/assets/cv/CV.pdf" | prepend: site.baseurl }} target="_blank">Paper</a>.</p> -->
   <!-- The Timeline -->
   <!-- <ul class="timeline">
     {% for exp in site.data.experience.experiences %}
