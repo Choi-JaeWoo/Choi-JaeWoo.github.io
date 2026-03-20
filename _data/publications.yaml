@@ -72,7 +72,7 @@ papers:
     code: "https://github.com/Choi-JaeWoo/HCRN"
 
   - title: "Short-Range Radar Based Real-Time Hand Gesture Recognition Using LSTM Encoder"
-    image: "/assets/publications/access19_radar-lstm/thumbnail.png"
+    video: "/assets/publications/access19_radar-lstm/demo.mp4"
     authors: "<b>Jae-Woo Choi*</b>, Si-Jung Ryu*, Jong-Hwan Kim"
     venue: "IEEE Access 2019"
     type: journal
