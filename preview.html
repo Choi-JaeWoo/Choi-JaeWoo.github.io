@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Jae-Woo Choi</title>
+  <meta name="description" content="Homepage of Jae-Woo Choi">
+  <meta name="author" content="Jae-Woo Choi">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="libs/external/skeleton/normalize.css">
+  <link rel="stylesheet" href="libs/external/skeleton/skeleton.css">
+  <link rel="stylesheet" href="libs/custom/my_css.css">
+  <script src="libs/external/jquery-3.1.1.min.js"></script>
+  <link rel="stylesheet" href="libs/external/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="libs/external/academicons-1.8.6/css/academicons.min.css">
+  <link rel="stylesheet" href="libs/external/skeleton_tabs/skeleton-tabs.css">
+  <script src="libs/external/skeleton_tabs/skeleton-tabs.js"></script>
+  <script src="libs/custom/my_js.js"></script>
+
+  <style>
+    papertitle {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: #222;
+    }
+    .pub-entry {
+      padding: 18px 0;
+      border-bottom: 1px solid #eee;
+      overflow: hidden;
+    }
+    .pub-entry:last-child {
+      border-bottom: none;
+    }
+    .pub-entry a {
+      color: #1772d0;
+      text-decoration: none;
+    }
+    .pub-entry a:hover {
+      color: #f09228;
+    }
+    .pub-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .pub-img-wrap {
+      flex-shrink: 0;
+      width: 280px;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      border-radius: 4px;
+      border: 1px solid #e0e0e0;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .pub-img-wrap img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+    .pub-img-wrap video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      background: #000;
+    }
+    .pub-img-wrap video::-webkit-media-controls {
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .pub-img-wrap:hover video::-webkit-media-controls {
+      opacity: 1;
+    }
+    .pub-text {
+      flex: 1;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #333;
+    }
+    .pub-entry em {
+      color: #555;
+    }
+    .badge-conf {
+      display: inline-block;
+      background: #1772d0;
+      color: #fff;
+      padding: 1px 7px;
+      border-radius: 3px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      vertical-align: middle;
+      margin-right: 4px;
+    }
+    .badge-journal {
+      display: inline-block;
+      background: #28a745;
+      color: #fff;
+      padding: 1px 7px;
+      border-radius: 3px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      vertical-align: middle;
+      margin-right: 4px;
+    }
+    .style_2 {
+      color: #999;
+    }
+    @media (max-width: 600px) {
+      .pub-row {
+        flex-direction: column;
+      }
+      .pub-img-wrap {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <section class="header">
+      <div class="row">
+        <div class="three columns">
+          <a href="/"><img class="u-max-full-width" style="border-radius: 1rem;" src="assets/profile-pics/jwchoi.jpg"></a>
+        </div>
+        <div class="nine columns main-description">
+            <h1>Jae-Woo Choi</h1>
+            <p>Senior Researcher at ETRI</p>
+            <p>Social Robotics Research Lab</p>
+            <p>jwchoi0717@etri.re.kr</p>
+            <p>
+              <span onclick="window.open('https://scholar.google.com/citations?user=vE3PElsAAAAJ&hl=en')" style="cursor: pointer">
+                <i class="ai fa ai-google-scholar-square" aria-hidden="true"></i>
+              </span>
+              <span onclick="window.open('https://github.com/Choi-JaeWoo')" style="cursor: pointer">
+                <i class="fa fa-github-square" aria-hidden="true"></i>
+              </span>
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="#about">About</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#publications">Publications</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#employment">Employment</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#education">Education</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#service">Service</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ========== About ========== -->
+    <div class="docs-section" id="about">
+      <h4>About</h4>
+      <p>
+        I am a Senior Researcher at <span style="color:#f09228; font-weight:600;">ETRI</span> (Electronics and Telecommunications Research Institute) and a concurrent Assistant Professor at <span style="color:#f09228; font-weight:600;">UST</span> (University of Science and Technology), South Korea.
+        My research interests include LLM/VLM-based task planning, embodied AI, and human-robot interaction.
+      </p>
+      <p>
+        I received my Ph.D. in Electrical Engineering from <span style="color:#f09228; font-weight:600;">KAIST</span> (Korea Advanced Institute of Science and Technology), advised by Prof. Jong-Hwan Kim.
+      </p>
+    </div>
+
+    <!-- ========== Publications ========== -->
+    <div class="docs-section" id="publications">
+      <h4>Publications</h4>
+      <h6>( * : equal contribution )</h6>
+
+      <ul class="tab-nav">
+        <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
+        <li><div class="button" data-ref="#papers-all">All</div></li>
+      </ul>
+
+      <div class="tab-content">
+        <!-- Selected Papers -->
+        <div class="tab-pane active" id="papers-selected">
+
+          <!-- ReAcTree AAMAS 2026 -->
+          <div class="pub-entry">
+            <div class="pub-row">
+              <div class="pub-img-wrap">
+                <video controls preload="metadata" muted>
+                  <source src="assets/publications/aamas26_reactree/demo.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="pub-text">
+                <span class="badge-conf">Conference</span>
+                <papertitle>ReAcTree: Hierarchical LLM Agent Trees with Control Flow for Long-Horizon Task Planning</papertitle><br>
+                <b>Jae-Woo Choi</b>, Hyungmin Kim, Hyobin Ong, Youngwoo Yoon, Minsu Jang, Dohyung Kim, Jaehong Kim<br>
+                <em>International Conference on Autonomous Agents and Multi-Agent Systems (AAMAS) 2026</em><br>
+                <a href="https://arxiv.org/abs/2511.02424" target="_blank">Paper</a>
+                <span class="style_2"> | </span>
+                <a href="https://github.com/Choi-JaeWoo/ReAcTree" target="_blank">Code</a>
+                <span class="style_2"> | </span>
+                <a href="https://choi-jaewoo.github.io/ReAcTree/" target="_blank">Webpage</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- LoTa-Bench (has video) -->
+          <div class="pub-entry">
+            <div class="pub-row">
+              <div class="pub-img-wrap">
+                <video controls preload="metadata" muted>
+                  <source src="assets/publications/iclr24_lota-bench/demo.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="pub-text">
+                <span class="badge-conf">Conference</span>
+                <papertitle>LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents</papertitle><br>
+                <b>Jae-Woo Choi*</b>, Youngwoo Yoon*, Hyobin Ong, Jaehong Kim, Minsu Jang<br>
+                <em>International Conference on Learning Representations (ICLR) 2024</em><br>
+                <a href="https://arxiv.org/abs/2402.08178" target="_blank">Paper</a>
+                <span class="style_2"> | </span>
+                <a href="https://github.com/lbaa2022/LLMTaskPlanning" target="_blank">Code</a>
+                <span class="style_2"> | </span>
+                <a href="https://choi-jaewoo.github.io/LoTa-Bench/" target="_blank">Webpage</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- FastSwap -->
+          <div class="pub-entry">
+            <div class="pub-row">
+              <div class="pub-img-wrap">
+                <img src="assets/publications/wacv23_fastswap/thumbnail.png">
+              </div>
+              <div class="pub-text">
+                <span class="badge-conf">Conference</span>
+                <papertitle>FastSwap: A Lightweight One-Stage Framework for Real-Time Face Swapping</papertitle><br>
+                Sahng-Min Yoo, Tae-Min Choi, <b>Jae-Woo Choi</b>, Jong-Hwan Kim<br>
+                <em>Winter Conference on Applications of Computer Vision (WACV) 2023</em><br>
+                <a href="https://openaccess.thecvf.com/content/WACV2023/html/Yoo_FastSwap_A_Lightweight_One-Stage_Framework_for_Real-Time_Face_Swapping_WACV_2023_paper.html" target="_blank">Paper</a>
+                <span class="style_2"> | </span>
+                <a href="https://github.com/sahngmin/fastswap" target="_blank">Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- FMCW Access 2022 (has video) -->
+          <div class="pub-entry">
+            <div class="pub-row">
+              <div class="pub-img-wrap">
+                <img src="assets/publications/access22_fmcw-ood/thumbnail.png">
+              </div>
+              <div class="pub-text">
+                <span class="badge-journal">Journal</span>
+                <papertitle>FMCW Radar-Based Real-Time Hand Gesture Recognition System Capable of Out-of-Distribution Detection</papertitle><br>
+                <b>Jae-Woo Choi*</b>, Chan-Woo Park*, Jong-Hwan Kim<br>
+                <em>IEEE Access 2022</em><br>
+                <a href="https://ieeexplore.ieee.org/abstract/document/9864155" target="_blank">Paper</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- SR-EM TCYB (has video) -->
+          <div class="pub-entry">
+            <div class="pub-row">
+              <div class="pub-img-wrap">
+                <video controls preload="metadata" muted>
+                  <source src="assets/publications/tcyb22_sr-em/demo.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="pub-text">
+                <span class="badge-journal">Journal</span>
+                <papertitle>SR-EM: Episodic Memory Aware of Semantic Relations Based on Hierarchical Clustering Resonance Network</papertitle><br>
+                <b>Jae-Woo Choi</b>, Gyeong-Moon Park, Jong-Hwan Kim<br>
+                <em>IEEE Transactions on Cybernetics 2022</em><br>
+                <a href="https://ieeexplore.ieee.org/abstract/document/9457217" target="_blank">Paper</a>
+                <span class="style_2"> | </span>
+                <a href="https://github.com/Choi-JaeWoo/HCRN" target="_blank">Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Short-Range Radar LSTM -->
+          <div class="pub-entry">
+            <div class="pub-row">
+              <div class="pub-img-wrap">
+                <img src="assets/publications/access19_radar-lstm/thumbnail.png">
+              </div>
+              <div class="pub-text">
+                <span class="badge-journal">Journal</span>
+                <papertitle>Short-Range Radar Based Real-Time Hand Gesture Recognition Using LSTM Encoder</papertitle><br>
+                <b>Jae-Woo Choi*</b>, Si-Jung Ryu*, Jong-Hwan Kim<br>
+                <em>IEEE Access 2019</em><br>
+                <a href="https://ieeexplore.ieee.org/abstract/document/8662554" target="_blank">Paper</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Developmental Resonance Network -->
+          <div class="pub-entry">
+            <div class="pub-row">
+              <div class="pub-img-wrap">
+                <img src="assets/publications/tnnls19_dev-resnet/thumbnail.png">
+              </div>
+              <div class="pub-text">
+                <span class="badge-journal">Journal</span>
+                <papertitle>Developmental Resonance Network</papertitle><br>
+                Gyeong-Moon Park, <b>Jae-Woo Choi</b>, Jong-Hwan Kim<br>
+                <em>IEEE Transactions on Neural Networks and Learning Systems 2019</em><br>
+                <a href="https://ieeexplore.ieee.org/abstract/document/8450634" target="_blank">Paper</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- All Papers -->
+        <div class="tab-pane" id="papers-all">
+
+          <!-- ReAcTree AAMAS 2026 -->
+          <div class="pub-entry">
+            <div class="pub-row">
+              <div class="pub-img-wrap">
+                <video controls preload="metadata" muted>
+                  <source src="assets/publications/aamas26_reactree/demo.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="pub-text">
+                <span class="badge-conf">Conference</span>
+                <papertitle>ReAcTree: Hierarchical LLM Agent Trees with Control Flow for Long-Horizon Task Planning</papertitle><br>
+                <b>Jae-Woo Choi</b>, Hyungmin Kim, Hyobin Ong, Youngwoo Yoon, Minsu Jang, Dohyung Kim, Jaehong Kim<br>
+                <em>International Conference on Autonomous Agents and Multi-Agent Systems (AAMAS) 2026</em><br>
+                <a href="https://arxiv.org/abs/2511.02424" target="_blank">Paper</a>
+                <span class="style_2"> | </span>
+                <a href="https://github.com/Choi-JaeWoo/ReAcTree" target="_blank">Code</a>
+                <span class="style_2"> | </span>
+                <a href="https://choi-jaewoo.github.io/ReAcTree/" target="_blank">Webpage</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- LoTa-Bench (has video) -->
+          <div class="pub-entry">
+            <div class="pub-row">
+              <div class="pub-img-wrap">
+                <video controls preload="metadata" muted>
+                  <source src="assets/publications/iclr24_lota-bench/demo.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="pub-text">
+                <span class="badge-conf">Conference</span>
+                <papertitle>LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents</papertitle><br>
+                <b>Jae-Woo Choi*</b>, Youngwoo Yoon*, Hyobin Ong, Jaehong Kim, Minsu Jang<br>
+                <em>International Conference on Learning Representations (ICLR) 2024</em><br>
+                <a href="https://arxiv.org/abs/2402.08178" target="_blank">Paper</a>
+                <span class="style_2"> | </span>
+                <a href="https://github.com/lbaa2022/LLMTaskPlanning" target="_blank">Code</a>
+                <span class="style_2"> | </span>
+                <a href="https://choi-jaewoo.github.io/LoTa-Bench/" target="_blank">Webpage</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- UR 2024 -->
+          <div class="pub-entry">
+            <div class="pub-row">
+              <div class="pub-img-wrap"></div>
+              <div class="pub-text">
+                <span class="badge-conf">Conference</span>
+                <papertitle>A Simple Baseline for Uncertainty-Aware Language-Oriented Task Planner for Embodied Agents</papertitle><br>
+                Hyobin Ong, Youngwoo Yoon, <b>Jae-Woo Choi</b>, Minsu Jang<br>
+                <em>International Conference on Ubiquitous Robots (UR) 2024</em><br>
+              </div>
+            </div>
+          </div>
+
+          <!-- HAI 2023 -->
+          <div class="pub-entry">
+            <div class="pub-row">
+              <div class="pub-img-wrap">
+                <img src="assets/publications/hai23_bdi-planning/thumbnail.png">
+              </div>
+              <div class="pub-text">
+                <span class="badge-conf">Conference</span>
+                <papertitle>A Structured Prompting based on Belief-Desire-Intention Model for Proactive and Explainable Task Planning</papertitle><br>
+                Minsu Jang, Youngwoo Yoon, <b>Jae-Woo Choi</b>, Hyobin Ong, Jaehong Kim<br>
+                <em>International Conference on Human-Agent Interaction (HAI) 2023</em><br>
+                <a href="https://dl.acm.org/doi/abs/10.1145/3623809.3623930" target="_blank">Paper</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- FastSwap -->
+          <div class="pub-entry">
+            <div class="pub-row">
+              <div class="pub-img-wrap">
+                <img src="assets/publications/wacv23_fastswap/thumbnail.png">
+              </div>
+              <div class="pub-text">
+                <span class="badge-conf">Conference</span>
+                <papertitle>FastSwap: A Lightweight One-Stage Framework for Real-Time Face Swapping</papertitle><br>
+                Sahng-Min Yoo, Tae-Min Choi, <b>Jae-Woo Choi</b>, Jong-Hwan Kim<br>
+                <em>Winter Conference on Applications of Computer Vision (WACV) 2023</em><br>
+                <a href="https://openaccess.thecvf.com/content/WACV2023/html/Yoo_FastSwap_A_Lightweight_One-Stage_Framework_for_Real-Time_Face_Swapping_WACV_2023_paper.html" target="_blank">Paper</a>
+                <span class="style_2"> | </span>
+                <a href="https://github.com/sahngmin/fastswap" target="_blank">Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- RiTA 2021 (no image) -->
+          <div class="pub-entry">
+            <div class="pub-row">
+              <div class="pub-img-wrap"></div>
+              <div class="pub-text">
+                <span class="badge-conf">Conference</span>
+                <papertitle>Field Friction Recognition and State Inference in AI Soccer</papertitle><br>
+                Chansol Hong, Gyeong-Min Lee, <b>Jae-Woo Choi</b>, Jong-Hwan Kim<br>
+                <em>International Conference on Robot Intelligence Technology and Applications (RiTA) 2021</em><br>
+                <a href="https://link.springer.com/chapter/10.1007/978-3-030-97672-9_37" target="_blank">Paper</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- FMCW Access 2022 (has video) -->
+          <div class="pub-entry">
+            <div class="pub-row">
+              <div class="pub-img-wrap">
+                <img src="assets/publications/access22_fmcw-ood/thumbnail.png">
+              </div>
+              <div class="pub-text">
+                <span class="badge-journal">Journal</span>
+                <papertitle>FMCW Radar-Based Real-Time Hand Gesture Recognition System Capable of Out-of-Distribution Detection</papertitle><br>
+                <b>Jae-Woo Choi*</b>, Chan-Woo Park*, Jong-Hwan Kim<br>
+                <em>IEEE Access 2022</em><br>
+                <a href="https://ieeexplore.ieee.org/abstract/document/9864155" target="_blank">Paper</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- SR-EM TCYB (has video) -->
+          <div class="pub-entry">
+            <div class="pub-row">
+              <div class="pub-img-wrap">
+                <video controls preload="metadata" muted>
+                  <source src="assets/publications/tcyb22_sr-em/demo.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="pub-text">
+                <span class="badge-journal">Journal</span>
+                <papertitle>SR-EM: Episodic Memory Aware of Semantic Relations Based on Hierarchical Clustering Resonance Network</papertitle><br>
+                <b>Jae-Woo Choi</b>, Gyeong-Moon Park, Jong-Hwan Kim<br>
+                <em>IEEE Transactions on Cybernetics 2022</em><br>
+                <a href="https://ieeexplore.ieee.org/abstract/document/9457217" target="_blank">Paper</a>
+                <span class="style_2"> | </span>
+                <a href="https://github.com/Choi-JaeWoo/HCRN" target="_blank">Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Short-Range Radar LSTM -->
+          <div class="pub-entry">
+            <div class="pub-row">
+              <div class="pub-img-wrap">
+                <img src="assets/publications/access19_radar-lstm/thumbnail.png">
+              </div>
+              <div class="pub-text">
+                <span class="badge-journal">Journal</span>
+                <papertitle>Short-Range Radar Based Real-Time Hand Gesture Recognition Using LSTM Encoder</papertitle><br>
+                <b>Jae-Woo Choi*</b>, Si-Jung Ryu*, Jong-Hwan Kim<br>
+                <em>IEEE Access 2019</em><br>
+                <a href="https://ieeexplore.ieee.org/abstract/document/8662554" target="_blank">Paper</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Developmental Resonance Network -->
+          <div class="pub-entry">
+            <div class="pub-row">
+              <div class="pub-img-wrap">
+                <img src="assets/publications/tnnls19_dev-resnet/thumbnail.png">
+              </div>
+              <div class="pub-text">
+                <span class="badge-journal">Journal</span>
+                <papertitle>Developmental Resonance Network</papertitle><br>
+                Gyeong-Moon Park, <b>Jae-Woo Choi</b>, Jong-Hwan Kim<br>
+                <em>IEEE Transactions on Neural Networks and Learning Systems 2019</em><br>
+                <a href="https://ieeexplore.ieee.org/abstract/document/8450634" target="_blank">Paper</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- RiTA 2018 -->
+          <div class="pub-entry">
+            <div class="pub-row">
+              <div class="pub-img-wrap">
+                <img src="assets/publications/rita18_hri-episodic/thumbnail.png">
+              </div>
+              <div class="pub-text">
+                <span class="badge-conf">Conference</span>
+                <papertitle>Human Robot Social Interaction Framework Based on Emotional Episodic Memory</papertitle><br>
+                Won-Hyong Lee, Sahng-Min Yoo, <b>Jae-Woo Choi</b>, Ue-Hwan Kim, Jong-Hwan Kim<br>
+                <em>International Conference on Robot Intelligence Technology and Applications (RiTA) 2018</em><br>
+                <a href="https://link.springer.com/chapter/10.1007/978-981-13-7780-8_9" target="_blank">Paper</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- APMC 2018 -->
+          <div class="pub-entry">
+            <div class="pub-row">
+              <div class="pub-img-wrap">
+                <img src="assets/publications/apmc18_radar/thumbnail.png">
+              </div>
+              <div class="pub-text">
+                <span class="badge-conf">Conference</span>
+                <papertitle>24 GHz FMCW Radar System for Real-Time Hand Gesture Recognition Using LSTM</papertitle><br>
+                Jun Seuk Suh, Siiung Ryu, Bvunghun Han, <b>Jae-Woo Choi</b>, Jong-Hwan Kim, Songcheol Hong<br>
+                <em>Asia-Pacific Microwave Conference (APMC) 2018</em><br>
+                <a href="https://ieeexplore.ieee.org/abstract/document/8617375" target="_blank">Paper</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== Employment ========== -->
+    <div class="docs-section" id="employment">
+      <h4>Employment</h4>
+        <div class="paper">
+          <p class="title"><b>Electronics and Telecommunications Research Institute (ETRI)<b style="float:right;">Sep. 2022 - Present</b></b></p>
+          <p>Senior Researcher, Social Robotics Research Section</p>
+        </div>
+        <div class="paper">
+          <p class="title"><b>University of Science and Technology (UST)<b style="float:right;">Mar. 2026 - Present</b></b></p>
+          <p>Assistant Professor (Concurrent), ETRI School, Artificial Intelligence</p>
+        </div>
+    </div>
+
+    <!-- ========== Education ========== -->
+    <div class="docs-section" id="education">
+      <h4>Education</h4>
+        <div class="paper">
+          <p class="title"><b>Korea Advanced Institute of Science and Technology (KAIST)<b style="float:right;">Mar. 2018 - Aug. 2022</b></b></p>
+          <p>Ph.D. in Electrical Engineering</p>
+        </div>
+        <div class="paper">
+          <p class="title"><b>Korea Advanced Institute of Science and Technology (KAIST)<b style="float:right;">Mar. 2016 - Feb. 2018</b></b></p>
+          <p>M.S. in Electrical Engineering</p>
+        </div>
+        <div class="paper">
+          <p class="title"><b>Korea Advanced Institute of Science and Technology (KAIST)<b style="float:right;">Feb. 2011 - Feb. 2016</b></b></p>
+          <p>B.S. in Mathematical Sciences (major) and Electrical Engineering (minor)</p>
+        </div>
+    </div>
+
+    <!-- ========== Academic Service ========== -->
+    <div class="docs-section" id="service">
+      <h4>Academic Service</h4>
+        <div class="paper">
+          <p class="title"><b>Reviewer, Neural Information Processing Systems (NeurIPS)<b style="float:right;">2025</b></b></p>
+          <p>Selected as a <b>Top Reviewer</b> among all reviewers for outstanding review quality and contribution.</p>
+        </div>
+        <div class="paper">
+          <p class="title"><b>Reviewer</b></p>
+          <p>ICLR, ICML, NeurIPS, AAAI</p>
+        </div>
+    </div>
+
+    <div class="footer">
+      <div class="row">
+        <div class="four columns">
+          Jae-Woo Choi
+        </div>
+        <div class="four columns">
+          based on <a href="https://web.media.mit.edu/~msaveski/" style="font-weight: lighter">Martin Saveski</a>'s template
+        </div>
+        <div class="four columns">
+          <span onclick="window.open('https://scholar.google.com/citations?user=vE3PElsAAAAJ&hl=en')" style="cursor: pointer">
+            <i class="ai ai-google-scholar-square" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('https://github.com/Choi-JaeWoo')" style="cursor: pointer">
+            <i class="fa fa-github-square" aria-hidden="true"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

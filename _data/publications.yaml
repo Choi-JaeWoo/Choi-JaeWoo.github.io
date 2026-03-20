@@ -1,7 +1,7 @@
 papers:
 
   - title: "ReAcTree: Hierarchical LLM Agent Trees with Control Flow for Long-Horizon Task Planning"
-    image: "/assets/publications/reactree/thumbnail.png"
+    image: "/assets/publications/aamas26_reactree/thumbnail.png"
     authors: "<b>Jae-Woo Choi</b>, Hyungmin Kim, Hyobin Ong, Youngwoo Yoon, Minsu Jang, Dohyung Kim, Jaehong Kim"
     venue: "International Conference on Autonomous Agents and Multi-Agent Systems (AAMAS) 2026"
     type: conference
@@ -9,10 +9,10 @@ papers:
     paper_pdf: "https://arxiv.org/abs/2511.02424"
     code: "https://github.com/Choi-JaeWoo/ReAcTree"
     project_page: "https://choi-jaewoo.github.io/ReAcTree/"
-    video: "/assets/publications/reactree/demo.mp4"
+    video: "/assets/publications/aamas26_reactree/demo.mp4"
 
   - title: "LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents"
-    image: "/assets/publications/lota-bench/thumbnail.png"
+    image: "/assets/publications/iclr24_lota-bench/thumbnail.png"
     authors: "<b>Jae-Woo Choi*</b>, Youngwoo Yoon*, Hyobin Ong, Jaehong Kim, Minsu Jang"
     venue: "International Conference on Learning Representations (ICLR) 2024"
     type: conference
@@ -20,7 +20,7 @@ papers:
     code: "https://github.com/lbaa2022/LLMTaskPlanning"
     project_page: "https://choi-jaewoo.github.io/LoTa-Bench/"
     paper_pdf: "https://arxiv.org/abs/2402.08178"
-    video: "/assets/publications/lota-bench/demo.mp4"
+    video: "/assets/publications/iclr24_lota-bench/demo.mp4"
 
   - title: "A Simple Baseline for Uncertainty-Aware Language-Oriented Task Planner for Embodied Agents"
     image:
@@ -30,7 +30,7 @@ papers:
     selected: n
 
   - title: "A Structured Prompting based on Belief-Desire-Intention Model for Proactive and Explainable Task Planning"
-    image: "/assets/publications/bdi-planning/thumbnail.png"
+    image: "/assets/publications/hai23_bdi-planning/thumbnail.png"
     authors: "Minsu Jang, Youngwoo Yoon, <b>Jae-Woo Choi</b>, Hyobin Ong, Jaehong Kim"
     venue: "International Conference on Human-Agent Interaction (HAI) 2023"
     type: conference
@@ -38,7 +38,7 @@ papers:
     paper_pdf: "https://dl.acm.org/doi/abs/10.1145/3623809.3623930"
 
   - title: "FastSwap: A Lightweight One-Stage Framework for Real-Time Face Swapping"
-    image: "/assets/publications/fastswap/thumbnail.png"
+    image: "/assets/publications/wacv23_fastswap/thumbnail.png"
     authors: "Sahng-Min Yoo, Tae-Min Choi, <b>Jae-Woo Choi</b>, Jong-Hwan Kim"
     venue: "Winter Conference on Applications of Computer Vision (WACV) 2023"
     type: conference
@@ -55,7 +55,7 @@ papers:
     paper_pdf: "https://link.springer.com/chapter/10.1007/978-3-030-97672-9_37"
 
   - title: "FMCW Radar-Based Real-Time Hand Gesture Recognition System Capable of Out-of-Distribution Detection"
-    image: "/assets/publications/fmcw-ood/thumbnail.png"
+    image: "/assets/publications/access22_fmcw-ood/thumbnail.png"
     authors: "<b>Jae-Woo Choi*</b>, Chan-Woo Park*, Jong-Hwan Kim"
     venue: "IEEE Access 2022"
     type: journal
@@ -63,7 +63,7 @@ papers:
     paper_pdf: "https://ieeexplore.ieee.org/abstract/document/9864155"
 
   - title: "SR-EM: Episodic Memory Aware of Semantic Relations Based on Hierarchical Clustering Resonance Network"
-    video: "/assets/publications/sr-em/demo.mp4"
+    video: "/assets/publications/tcyb22_sr-em/demo.mp4"
     authors: "<b>Jae-Woo Choi</b>, Gyeong-Moon Park, Jong-Hwan Kim"
     venue: "IEEE Transactions on Cybernetics 2022"
     type: journal
@@ -72,7 +72,7 @@ papers:
     code: "https://github.com/Choi-JaeWoo/HCRN"
 
   - title: "Short-Range Radar Based Real-Time Hand Gesture Recognition Using LSTM Encoder"
-    image: "/assets/publications/radar-lstm/thumbnail.png"
+    image: "/assets/publications/access19_radar-lstm/thumbnail.png"
     authors: "<b>Jae-Woo Choi*</b>, Si-Jung Ryu*, Jong-Hwan Kim"
     venue: "IEEE Access 2019"
     type: journal
@@ -80,7 +80,7 @@ papers:
     paper_pdf: "https://ieeexplore.ieee.org/abstract/document/8662554"
 
   - title: "Developmental Resonance Network"
-    image: "/assets/publications/dev-resnet/thumbnail.png"
+    image: "/assets/publications/tnnls19_dev-resnet/thumbnail.png"
     authors: "Gyeong-Moon Park, <b>Jae-Woo Choi</b>, Jong-Hwan Kim"
     venue: "IEEE Transactions on Neural Networks and Learning Systems 2019"
     type: journal
@@ -88,7 +88,7 @@ papers:
     paper_pdf: "https://ieeexplore.ieee.org/abstract/document/8450634"
 
   - title: "Human Robot Social Interaction Framework Based on Emotional Episodic Memory"
-    image: "/assets/publications/hri-episodic/thumbnail.png"
+    image: "/assets/publications/rita18_hri-episodic/thumbnail.png"
     authors: "Won-Hyong Lee, Sahng-Min Yoo, <b>Jae-Woo Choi</b>, Ue-Hwan Kim, Jong-Hwan Kim"
     venue: "International Conference on Robot Intelligence Technology and Applications (RiTA) 2018"
     type: conference
@@ -96,7 +96,7 @@ papers:
     paper_pdf: "https://link.springer.com/chapter/10.1007/978-981-13-7780-8_9"
 
   - title: "24 GHz FMCW Radar System for Real-Time Hand Gesture Recognition Using LSTM"
-    image: "/assets/publications/apmc-radar/thumbnail.png"
+    image: "/assets/publications/apmc18_radar/thumbnail.png"
     authors: "Jun Seuk Suh, Siiung Ryu, Bvunghun Han, <b>Jae-Woo Choi</b>, Jong-Hwan Kim, Songcheol Hong"
     venue: "Asia-Pacific Microwave Conference (APMC) 2018"
     type: conference
