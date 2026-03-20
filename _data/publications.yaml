@@ -55,7 +55,7 @@ papers:
     paper_pdf: "https://link.springer.com/chapter/10.1007/978-3-030-97672-9_37"
 
   - title: "FMCW Radar-Based Real-Time Hand Gesture Recognition System Capable of Out-of-Distribution Detection"
-    image: "/assets/publications/access22_fmcw-ood/thumbnail.png"
+    video: "/assets/publications/access22_fmcw-ood/demo.mp4"
     authors: "<b>Jae-Woo Choi*</b>, Chan-Woo Park*, Jong-Hwan Kim"
     venue: "IEEE Access 2022"
     type: journal
