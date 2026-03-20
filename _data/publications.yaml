@@ -23,11 +23,12 @@ papers:
     video: "/assets/publications/iclr24_lota-bench/demo.mp4"
 
   - title: "A Simple Baseline for Uncertainty-Aware Language-Oriented Task Planner for Embodied Agents"
-    image:
+    image: "/assets/publications/ur24_uncertainty/thumbnail.png"
     authors: "Hyobin Ong, Youngwoo Yoon, <b>Jae-Woo Choi</b>, Minsu Jang"
     venue: "International Conference on Ubiquitous Robots (UR) 2024"
     type: conference
     selected: n
+    paper_pdf: "https://ieeexplore.ieee.org/document/10597499"
 
   - title: "A Structured Prompting based on Belief-Desire-Intention Model for Proactive and Explainable Task Planning"
     image: "/assets/publications/hai23_bdi-planning/thumbnail.png"
