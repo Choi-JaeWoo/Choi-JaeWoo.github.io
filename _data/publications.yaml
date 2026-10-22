@@ -1,5 +1,14 @@
 papers:
 
+  - title: "Memory–Environment Dual-Grounding for Embodied Agents: Active Information Seeking Beyond Passive Observation"
+    image: "/assets/publications/emnlp26_scenequeryplanner/thumbnail.png"
+    authors: "<b>Jae-Woo Choi*</b>, Sehoon Oh*, Ue-Hwan Kim"
+    venue: "Findings of the Association for Computational Linguistics: EMNLP 2026"
+    type: conference
+    selected: y
+    code: "https://github.com/Choi-JaeWoo/SceneQueryPlanner"
+    video: "/assets/publications/emnlp26_scenequeryplanner/demo.mp4"
+
   - title: "ReAcTree: Hierarchical LLM Agent Trees with Control Flow for Long-Horizon Task Planning"
     image: "/assets/publications/aamas26_reactree/thumbnail.png"
     authors: "<b>Jae-Woo Choi</b>, Hyungmin Kim, Hyobin Ong, Youngwoo Yoon, Minsu Jang, Dohyung Kim, Jaehong Kim"
