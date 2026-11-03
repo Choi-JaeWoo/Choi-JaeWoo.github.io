@@ -6,6 +6,7 @@ papers:
     venue: "Findings of the Association for Computational Linguistics: EMNLP 2026"
     type: conference
     selected: y
+    paper_pdf: "https://aclanthology.org/2026.findings-emnlp.16/"
     code: "https://github.com/Choi-JaeWoo/SceneQueryPlanner"
     video: "/assets/publications/emnlp26_scenequeryplanner/demo.mp4"
 
